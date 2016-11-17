@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pCx-cz-G8b">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First Page-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="spike_localization" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmG-ha-viP">
+                                <rect key="frame" x="143" y="279" width="90" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SjF-5R-p3z">
+                                <rect key="frame" x="166" y="340" width="43" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <segue destination="E9c-HG-HUy" kind="show" id="gcE-gn-Rtx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Tj-ob-eKR">
+                                <rect key="frame" x="0.0" y="607" width="124" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="lbp-bk-ssT"/>
+                                </constraints>
+                                <state key="normal" title="English"/>
+                                <connections>
+                                    <action selector="englishButtonDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TKh-mR-P6U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGc-SY-ito">
+                                <rect key="frame" x="251.5" y="607" width="123.5" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="JJv-tH-OQi"/>
+                                </constraints>
+                                <state key="normal" title="French"/>
+                                <connections>
+                                    <action selector="frenchButtonDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RHE-1h-ww0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvp-fc-PR8">
+                                <rect key="frame" x="125" y="607" width="124" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="g7J-ju-sFf"/>
+                                </constraints>
+                                <state key="normal" title="Thai"/>
+                                <connections>
+                                    <action selector="thaiButtonDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wzx-dL-F7T"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SjF-5R-p3z" firstAttribute="top" secondItem="xmG-ha-viP" secondAttribute="bottom" constant="13" id="5IW-CL-3IK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LGc-SY-ito" secondAttribute="bottom" id="DwI-08-q4m"/>
+                            <constraint firstItem="6Tj-ob-eKR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FAa-rR-ngP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6Tj-ob-eKR" secondAttribute="bottom" id="Tg3-kP-M8T"/>
+                            <constraint firstItem="LGc-SY-ito" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.33" id="VLK-jg-aXw"/>
+                            <constraint firstItem="uvp-fc-PR8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a8b-SW-KvZ"/>
+                            <constraint firstItem="6Tj-ob-eKR" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.33" id="clH-Pt-ecm"/>
+                            <constraint firstItem="xmG-ha-viP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iEq-Iq-2tG"/>
+                            <constraint firstItem="uvp-fc-PR8" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.33" id="kcx-eV-NVF"/>
+                            <constraint firstItem="xmG-ha-viP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-30.5" id="lo2-Lt-urJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uvp-fc-PR8" secondAttribute="bottom" id="nYh-WG-A0i"/>
+                            <constraint firstItem="SjF-5R-p3z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qUE-Ok-QTO"/>
+                            <constraint firstAttribute="trailing" secondItem="LGc-SY-ito" secondAttribute="trailing" id="sTC-Vk-E46"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="First Page" id="La4-Fi-UCL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="992.79999999999995" y="-645.42728635682158"/>
+        </scene>
+        <!--Second Page-->
+        <scene sceneID="SQj-sO-vdC">
+            <objects>
+                <viewController id="E9c-HG-HUy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bkp-F7-c5o"/>
+                        <viewControllerLayoutGuide type="bottom" id="u9G-MD-ufd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ic6-TZ-VwM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WyX-uh-rNT">
+                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                                <string key="text">What is Lorem Ipsum?
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WyX-uh-rNT" firstAttribute="top" secondItem="bkp-F7-c5o" secondAttribute="bottom" id="C6O-qV-6Dy"/>
+                            <constraint firstItem="WyX-uh-rNT" firstAttribute="leading" secondItem="ic6-TZ-VwM" secondAttribute="leading" constant="16" id="Gpr-Mr-7WF"/>
+                            <constraint firstItem="u9G-MD-ufd" firstAttribute="top" secondItem="WyX-uh-rNT" secondAttribute="bottom" id="JrA-sC-i4l"/>
+                            <constraint firstAttribute="trailing" secondItem="WyX-uh-rNT" secondAttribute="trailing" constant="16" id="XOs-wf-zyE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Second Page" id="xZA-NS-6x5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RBY-qs-Bgb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1800.8" y="-645.42728635682158"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BA1-DY-mBT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pCx-cz-G8b" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nOR-e5-Ktf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ddx-rp-EAk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tLj-bI-kkC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="152.80000000000001" y="-645.42728635682158"/>
+        </scene>
+    </scenes>
+</document>

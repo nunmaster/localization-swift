@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  spike-localization
+
+  Created by Nonthanun Sudlapa on 11/16/2559 BE.
+  Copyright © 2559 nun. All rights reserved.
+*/
+
+"alertTitle" = "Changer le succès de la langue";
+"alertMessage" = "Veuillez redémarrer l'application";
+"alertButton" = "D'accord";
