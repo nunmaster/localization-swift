@@ -1,4 +1,5 @@
 # localization-swift
+![Platform](https://img.shields.io/badge/platform-ios-lightgrey.svg?style=flat)
 - Can change language up to 3 languages
 - Use both storyboard and localizable string in source code
 - Must restart (kill app) to apply language changed
