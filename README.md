@@ -1,10 +1,10 @@
 # localization-swift
 ![Platform](https://img.shields.io/badge/platform-ios-lightgrey.svg?style=flat)
-![Platform](https://img.shields.io/badge/language-swift%203.0-brightgreen.svg?style=flat)
+![Platform](https://img.shields.io/badge/language-swift%204.0-brightgreen.svg?style=flat)
 - Can change language up to 3 languages
 - Use both storyboard and localizable string in source code
-- Must restart (kill app) to apply language changed
-- Support Swift 3.0
+- Auto reload viewcontroller when change language was triggered
+- Support Swift 4.0
 
 
 <img src="https://lh3.googleusercontent.com/ujKu7Np-ddBYX1K622cPwSW6PbLwEdWdlA_OsTBVdfIBx0p814SypKQ1lAsJpGXINPwIv_njeMa9fphvgvYvcxdDE51TF2szUg3KHozINbp7AxlWkWou7jfiX1TjdXqR88aWjKQMnHo9NudcXALhAsnFZ17VbVakSkWcGpVc4kplXh3bBgT6o9HtnDs1obzKWa5qxBiQ1OBGSm7uHRGDEcI452iAfxn86Hr0dBmuWkc8yM2fSCd7apd0RIRau4fL0kl_9wzQAdUrg88ddsARcIzXIrpskkbwFA4lh3en6YNAZBAjtB8WcaefOKCdDSoj03QLSkIFLzIs8bINuVVza-IN2vG4qoFSZDJseFWEBVKgdzJgfiAA6vwvLyak4xEYZYHyHLsZGWKuqh31Sz1To9GKcVA-U8PZAax7S5MjWshaHppP3J7Gy3mYqt4IzkyEnc3nO7HOY2IqsLLX-FjcQyN3XpGstWRFrfHTg8TVuqshi7mKNVUKbSiRNNsO2qe7CzMIkTzlCDl_5zbG9KqtmcvHq3_IjVfGmteA94tGsgcpYO-gkAeLHg-HylBrR9fiNyow6tsybSZDjOIs-AKfEL8DFbTJWl7U0oQw1puBIii72-g9=w403-h716-no" width="30%"></img> 
