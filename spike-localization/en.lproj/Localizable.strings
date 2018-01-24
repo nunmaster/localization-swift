@@ -6,6 +6,5 @@
   Copyright © 2559 nun. All rights reserved.
 */
 
-"alertTitle" = "Change Language Success";
-"alertMessage" = "Please Restart Application";
+"alertMessage" = "Change Language Success";
 "alertButton" = "Ok";

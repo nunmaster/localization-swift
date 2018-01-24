@@ -6,6 +6,5 @@
   Copyright © 2559 nun. All rights reserved.
 */
 
-"alertTitle" = "เปลี่ยนภาษาสำเร็จ";
-"alertMessage" = "กรุณาเริ่มการทำงานแอปพลิเคชันใหม่อีกครั้ง";
+"alertMessage" = "เปลี่ยนภาษาสำเร็จ";
 "alertButton" = "ตกลง";

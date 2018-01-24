@@ -6,6 +6,5 @@
   Copyright © 2559 nun. All rights reserved.
 */
 
-"alertTitle" = "Changer le succès de la langue";
-"alertMessage" = "Veuillez redémarrer l'application";
+"alertMessage" = "Changer le succès de la langue";
 "alertButton" = "D'accord";

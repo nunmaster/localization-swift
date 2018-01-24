@@ -9,44 +9,40 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     @IBAction func englishButtonDidTouch(_ sender: Any) {
-        defaults.set(["en"], forKey: "AppleLanguages")
-        defaults.synchronize()
-        self.showAlert()
+        Language.setAppleLAnguageTo(lang: "en")
+        showAlert()
+        reload()
     }
     
     @IBAction func thaiButtonDidTouch(_ sender: Any) {
-        defaults.set(["th"], forKey: "AppleLanguages")
-        defaults.synchronize()
+        Language.setAppleLAnguageTo(lang: "th")
         self.showAlert()
+        showAlert()
+        reload()
     }
     
     @IBAction func frenchButtonDidTouch(_ sender: Any) {
-        defaults.set(["fr"], forKey: "AppleLanguages")
-        defaults.synchronize()
-        self.showAlert()
+        Language.setAppleLAnguageTo(lang: "fr")
+        showAlert()
+        reload()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func reload() {
+        let rootviewcontroller: UIWindow = ((UIApplication.shared.delegate?.window)!)!
+        rootviewcontroller.rootViewController = self.storyboard?.instantiateViewController(withIdentifier: "root")
     }
     
     func showAlert() {
-        
-        let alertTitle = NSLocalizedString("alertTitle", comment: "")
         let alertMessage = NSLocalizedString("alertMessage", comment: "")
         let alertButton = NSLocalizedString("alertButton", comment: "")
         
-        let alert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: nil, message: alertMessage, preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: alertButton, style: UIAlertActionStyle.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
